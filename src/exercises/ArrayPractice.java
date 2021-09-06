@@ -7,10 +7,9 @@ public class ArrayPractice {
     public static void main(String[] args) {
         ArrayPractice arrayPractice = new ArrayPractice();
         // arrayPractice.printOddNumbers();
-        arrayPractice.printStringArray();
+        // arrayPractice.printStringArray();
         arrayPractice.printStringArrayIntoSentences();
     }
-
     public void printOddNumbers() {
 
         int[] integerArray = {1, 1, 2, 3, 5, 8};
@@ -21,15 +20,13 @@ public class ArrayPractice {
             }
         }
     }
-
-    public void printStringArray() {
+    public String[] printStringArray() {
 
         String stringArray = "I would not, could not, in a box. I would not, could not with a fox. I will not eat them in a house. I will not eat them with a mouse.";
         String[] splitStringArray = stringArray.split(" ");
-        System.out.println(Arrays.toString(splitStringArray));
-
+        //System.out.println(Arrays.toString(splitStringArray));
+        return splitStringArray;
     }
-
     public void printStringArrayIntoSentences() {
 
         String sentenceArray = "I would not, could not, in a box. I would not, could not with a fox. I will not eat them in a house. I will not eat them with a mouse.";
