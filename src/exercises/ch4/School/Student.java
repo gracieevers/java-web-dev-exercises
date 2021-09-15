@@ -1,6 +1,11 @@
-package exercises.ch4;
+package exercises.ch4.School;
 
 public class Student {
+
+    public static void main(String[] args){
+        Student myself = new Student("Kyle", 1, 1, 4.0);
+
+    }
 
     private static int nextStudentId = 1;
     private String name;
@@ -34,7 +39,7 @@ public class Student {
     public void setName(String name) { this.name = name; }
 
     public int getStudentId() { return this.studentId; }
-    public void setStudentId(int studentId) { this.studentId = studentId; }
+    private void setStudentId(int studentId) { this.studentId = studentId; }
 
     public int getNumberOfCredits() { return this.numberOfCredits; }
     public void setNumberOfCredits(int numberOfCredits) { this.numberOfCredits = numberOfCredits; }
