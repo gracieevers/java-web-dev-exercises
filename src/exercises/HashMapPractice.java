@@ -30,8 +30,6 @@ public class HashMapPractice {
                 System.out.println(newStudentName);
 
                 students.put(newStudentId, newStudentName);
-
-
             }
 
         } while(!newStudentId.equals(-1));
